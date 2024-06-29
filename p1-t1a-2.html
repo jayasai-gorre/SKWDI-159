@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pricing Table</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+       .pricing-grid {
+            margin: 50px 0;
+        }
+       .pricing-grid.data-table th,.pricing-grid.data-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+       .pricing-grid.data-table-hover tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+       .pricing-grid.highlight-row {
+            background-color: #007bff;
+            color: white;
+        }
+       .pricing-grid.highlight-row.action-button {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pricing Grid Section -->
+    <section class="pricing-grid container">
+        <h2 class="text-center mb-5">Subscription Options</h2>
+        <div class="table-responsive">
+            <table class="data-table table-bordered data-table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Package</th>
+                        <th scope="col">Inclusions</th>
+                        <th scope="col">Monthly Fee</th>
+                        <th scope="col">Get Started</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>Inclusion 1, Inclusion 2, Inclusion 3</td>
+                        <td>$15/month</td>
+                        <td><a href="#" class="action-button btn btn-primary">Sign Up</a></td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Pro</td>
+                        <td>Inclusion 1, Inclusion 2, Inclusion 3, Inclusion 4</td>
+                        <td>$30/month</td>
+                        <td><a href="#" class="action-button btn btn-primary">Sign Up</a></td>
+                    </tr>
+                    <tr>
+                        <td>Business</td>
+                        <td>Inclusion 1, Inclusion 2, Inclusion 3, Inclusion 4, Inclusion 5</td>
+                        <td>$50/month</td>
+                        <td><a href="#" class="action-button btn btn-primary">Sign Up</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

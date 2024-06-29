@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .about-section {
+            position: relative;
+            background: url('https://picsum.photos/1920/1080?random=2') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .about-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .about-content {
+            position: relative;
+            z-index: 1;
+        }
+        .about-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .about-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .about-content .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .about-content .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+
+    <section class="about-section">
+        <div class="about-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 about-content">
+                    <h1>About Our Company</h1>
+                    <p>Learn more about our mission, vision, and values that drive us to provide the best products and services.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
